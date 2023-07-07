@@ -16,7 +16,7 @@ String brand;
  
 static{
 	 ramType=8;
-	 displayType="Analog";
+	 displayType="LCD";
 	 numberOfKeys=104;
 	 operatingSystem="Windows";
 	 material="metal";
