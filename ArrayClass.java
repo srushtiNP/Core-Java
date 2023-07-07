@@ -58,12 +58,7 @@ for(int i=0;i<Initials.length;i++)
 {
 	System.out.println(Initials[i]);
 }
-byte[] numberOfStudentsPresent = {45 , 35, 0 , 10 , 45};
-System.out.println("numberOfStudentsPresent");
-for(int i=0;i<numberOfStudentsPresent.length;i++)
-{
-	System.out.println(numberOfStudentsPresent[i]);
-}
+
 //Using New KeyWord
 char[] vowels = new char[5];
 vowels[3] = 'O';

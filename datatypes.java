@@ -1,13 +1,5 @@
 class student{
 public static void main(String args[]){
-	int totalNumberOfStudent=20;
-	String companyName="Xworkz";
-	int numberOfEmployees = 22;
-	String nameOfCollege = "BGMIT";
-	int numberOfLaptops = 30;
-	String nameOfLaptop = "dell";
-	int numberOfCars=35;
-	String colourName="red";
 	byte numberOfDaysinAweek =7;
 	byte numberOfMonthsinAyear=12;
 	byte numberOfColoursinArainbow=7;
@@ -21,7 +13,23 @@ public static void main(String args[]){
 	short feesofprimaryschool=30000;
 	short prizeofgoldgm=4000;
 	short strengthofclg=1500;
+	short 
+	short
+	short
+	short
+	short
+	short
+	short
 	
+	
+	int totalNumberOfStudent=20;
+	String companyName="Xworkz";
+	int numberOfEmployees = 22;
+	String nameOfCollege = "BGMIT";
+	int numberOfLaptops = 30;
+	String nameOfLaptop = "dell";
+	int numberOfCars=35;
+	String colourName="red";
 	System.out.println(totalNumberOfStudent);
 	System.out.println(companyName);
 	System.out.println(numberOfEmployees);
