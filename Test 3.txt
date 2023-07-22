@@ -1,0 +1,178 @@
+                                                       Test 3
+1)11 34.
+
+2)illegal start of expression.
+
+3)syntax error.
+
+4)we are not able to call using class name.
+
+6)method parameter means parameters are also commonly referred to as arguments Parameters act as variables inside the method.Parameters are
+ specified after the method namein side the parentheses. we can add as many parameters as we want, just we have to separate them with a comma.
+
+For example:public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+  public static void main(String[] args){
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+When a parameter is passed to the method it is called an argument So from the example above fname is a parameter 
+while Liam, Jenny and Anja are arguments.
+
+7)Polymorphism in Java refers to an object’s capacity to take several forms. Polymorphism allows us to perform the same action in multiple 
+ ways in Java.
+
+Polymorphism is divided into two types those are listed below
+i)Compile-time polymorphism
+ii)Run time polymorphism
+Run time polymorphism is implemented through Method overriding.
+Whereas Compile Time polymorphism is implemented through Method overloading and Operator overloading. Compile-time polymorphism is also
+known as static polymorphism or early binding.
+compile timepolymorphism is a polymorphism that is resolved during the compilation process. Overloading of methods is called through the reference 
+variable of a class. 
+Example is written below
+show( char a )
+show( char a ,char b )
+In the given example, the first show method has one parameter, and the second show method has two methods. When a function is called
+the compiler looks at the number of parameters and decides how to resolve the method call.
+
+8)Variable Arguments in Java is a method that takes a variable number of arguments. Variable Arguments in Java simplifies the creation
+of methods that need to take a variable number of arguments Internally the Varargs method is implemented by using the single dimensions 
+arrays concept. Hence in the Varargs method, we can differentiate arguments by using Index. 
+public static void fun(int ... a) 
+{
+   // method body
+} 
+This syntax tells the compiler that fun( ) can be called with zero or more arguments. As a result, here, a is implicitly declared as an
+array of type int[].
+
+9)A Package in JAVA is a collection of sub-packages, interfaces, and classes of a common type. In Java, there are two types of packages.
+ built-in packages and user-defined packages. Many built-in packages are available, including Java,lang,awt,javax,swing,net,io,util
+sql.
+The import keyword is used to import a package, class or interface.
+i)Explicit import:Classes are available inside the package, Explicit means direct or when we give the proper path of the java 
+class it will call as explicit import. 
+ii)Implicit import:Implicit means indirect, When we load all the classes of the package in our java code by using (*) it will call as implicit import.
+
+10)Constructor chaining is the process of calling one constructor from another constructor with respect to current object.One of the main 
+use of constructor chaining is to avoid duplicate codes while having multiple constructors.
+example:
+class Temp
+{
+Temp()
+{
+this(5);
+System.out.println("The Default constructor");
+}
+ Temp(int x)
+    {
+ this (5, 15);
+ System.out.println(x);
+  }
+ Temp(int x, int y)
+    {
+ System.out.println(x * y);
+    }
+public static void main(String args[])
+    {
+new Temp();
+    }
+}
+
+11)class Main {
+  public static void main(String[] args) {
+      int n = 10, firstTerm = 0, secondTerm = 1;
+      System.out.println("Fibonacci Series till " + n + " terms:");
+      for (int i = 1; i <= n; ++i) {
+      System.out.print(firstTerm + ", ");
+      int nextTerm = firstTerm + secondTerm;
+      firstTerm = secondTerm;
+      secondTerm = nextTerm;
+    }
+  }
+In the above program firstTerm and secondTerm are initialized with 0 and 1 respectively first two digits of Fibonacci series.
+
+12)class OddOccurrence {
+  
+  static int getOddOccurrence(int arr[], int arr_size)
+    {
+      int i;
+        for (i = 0; i < arr_size; i++) {
+            int count = 0;
+            for (int j = 0; j < arr_size; j++) {
+                if (arr[i] == arr[j])
+                    count++;
+            }
+            if (count % 2 != 0)
+                return arr[i];
+        }
+        return -1;
+    }
+    public static void main(String[] args)
+    {
+        int arr[] = new int[] { 2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2 };
+        int n = arr.length;
+        System.out.println(getOddOccurrence(arr, n));
+    }
+}
+
+13)import java.util.*;
+class Main
+{
+public static void main(String[] args) 
+  {
+    Object[] a = new Object[] {1, 5, 7, 9};
+    Object[] b = new Object[] {9, 5, 1, 7};
+    Object[] c = new Object[] {1, 6, 7, 5};
+      
+    Arrays.sort(a);
+    Arrays.sort(b);
+    Arrays.sort(c);
+
+    boolean returnVal1 = Arrays.equals(a,b);
+    System.out.println("Array a and b equal?: " + returnVal1);
+
+    boolean returnVal2 = Arrays.equals(b,c);
+    System.out.println("Array b and c equal?: " + returnVal2);
+  }
+}
+
+14)enum type is a special data type that enables for a variable to be a set of predefined constants. whose legal values consist of a fixed 
+set of constants.Common examples include compass directions,which take the values North,South,East and West and days of the week,
+which take the values Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,and Saturday.An enumeration can be defined simply by creating a list of enum variable. Let us take an example for list of Subject variable, with different subjects in the list.
+Enumeration defined
+enum Subject           
+{
+	Java, Cpp, C, Dbms
+}
+
+Identifiers Java, Cpp, C and Dbms are called enumeration constants.These are public, static and final by default.Variables of Enumeration can be defined directly without any new keyword.
+
+enum WeekDays{ SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY} 
+class Demo
+{
+	public static void main(String args[])
+	{
+		WeekDays wk; 			
+		wk = WeekDays.SUNDAY; 	
+		System.out.println("Today is "+wk);
+	}
+}
+
+15)When you create an object, you are creating an instance of a class, therefore "instantiating" a class. The new operator requires a 
+single, postfix argument: a call to a constructor. The name of the constructor provides the name of the class to instantiate. The 
+constructor initializes the new object.JVM searches the file system for the definition of the class, that is the Java byte code.
+
+16)list of classes
+        ->Fields
+		->Constructor
+		->Methods
+		->Static Methodss
+		->Inner class
+		->static block
+
+  
